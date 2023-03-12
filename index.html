@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExoticRP | By MrColfasky</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/774314896057303120/1056395336559632434/exoticrp.png">
+</head>
+<body>
+    <header>
+        <a href="#"  class="logo">ExoticRP</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">O Serwerze</a></li>
+            <li><a href="#howplay">Jak Zagrać</a></li>
+            <li><a href="#reg">Regulamin</a></li>
+            <li><a href="#podania">Podania</a></li>
+            <li><a href="#dev">DevLog</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="./assets/img/stars.png" id="stars">
+        <img src="./assets/img/moon.png" id="moon">
+        <img src="./assets/img/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">ExoticRP</h2>
+        <a href="https://discord.gg/ma7DGEnVFp" id="btn">Discord</a>
+        <img src="./assets/img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="about" id="about">
+        <h2>Witaj na serwerze ExoticRP!</h2>
+        <h4>U nas znajdziesz:</h4>
+        <p>   
+            <br>-Wspaniałą Atmosferę Oraz Społeczność!</br>
+            <br>-Doświadzczoną I Miłą Administrację!</br>
+            <br>-Dobrze Zoptymalizowane Skrypty!</br>
+            <br>-Możliwość Założenia Własnej Organizacji Przestępczej Lub Firmy!</br>
+        </p>
+    </div>
+    <div class="howplay" id="howplay">
+        <h2>Jak Zagrać?</h2>
+        <p>   
+            Musisz posiadać legalną kopię Grand Theft Auto 5,<br> następnie pobrać launcher FiveM z oficjalnej strony cfx.re,<br>a następnie połączyć się z naszym serweram.<br>
+            <br><a href="https://fivem.net">Pobierz FiveM</a>
+            <a href="fivem://connect/185.254.97.62:30120">Połącz z serwerem</a>
+        </p>
+    </div>
+    <div class="reg" id="reg">
+        <h2>Regulamin</h2>
+        <p>   
+            <a href="https://docs.google.com/document/d/1ZIjv4isqSdpFQueGUe4p4i6oPlPFtWi-lWNILLPAQVs/edit#">Czytaj Regulamin</a>
+        </p>
+    </div>
+    <div class="podania" id="podania">
+        <h2>Podania</h2>
+        <p>   
+            Chcesz Dołączyć Do Frakcji, Stworzyć Własną Firmę Czy Założyć Organizację Przestępczą? <br>Jeśli tak to napisz podanie! <br>
+            <br><a href="https://docs.google.com/forms/d/e/1FAIpQLSdm6jSLTqxD9j1e2_avSZKBL2Br0KBuk1iW9H0A-Hwap-6QvQ/viewform">Los Santos Police Departament</a>
+            <a href="https://forms.gle/LrFBgMBwo7ppsrYAA">Emergency Medical Services</a>
+            <a href="https://forms.gle/hDjfU9hb9xukXdh78">Organizacja Przestępcza</a>
+            <a href="https://docs.google.com/forms/d/17hXkk8YhuA6granPUkTh4SwweP-jGy4223Dnw0G7TPg/edit?hl=pl">Firma</a>
+        </p>
+    </div>
+    <div class="dev" id="dev">
+        <h2>DevLog</h2>
+        <h4>20 stycznia 2023</h4>
+        <p>   
+            <br>[+] - Dodano Zdrapki
+            <br>[+] - Dodano Więcej ubrań
+            <br>[+] - Dodano Nowe autka do Car Dealera i dla LSPD
+            <br>[/] - Zmieniono wygląd <a href="https://cdn.discordapp.com/attachments/1067476328049287168/1067476362765541446/image.png">ekwipunku</a> 
+            <br>[/] - Wprowadzono Drobne Poprawki
+        </p>
+    </div>
+    <footer>
+        <p>Wszystkie prawa zastrzeżone © 2023</p>
+        <p>ExoticRP By<a href="https://github.com/mrcolfasky"> MrColfasky#1492</a></p>
+        <h1><a href="#">ᐱ</a></h1>
+    </footer>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 4 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- Jak Co To Główna Strona Z tego Poradnika ;)
+https://www.youtube.com/watch?v=1wfeqDyMUx4&t=618s -->
